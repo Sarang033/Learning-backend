@@ -14,10 +14,10 @@ const server=http.createServer((req,res)=>{
             console.log(err);
         }else{
             res.write(fileData);
+
             res.end();
         }
     })
-
 });
 
 server.listen(3000, 'localhost',()=>{
